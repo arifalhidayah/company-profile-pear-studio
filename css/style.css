@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-block: 1rem;
+    margin-inline: auto;
+    z-index: 999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: left;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list ul li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #aac031;
+    color: white;
+}
+
+main {
+    width: 100%;
+    font-family: 'Poppins', 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efffec;
+}
+
+main .content .content-description {
+    flex: 2 1;
+}
+
+main .content .content-description .title {
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+main .content .content-description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description button {
+    display: inline;
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #aac031;
+    border: 3px solid transparent;
+    border-radius: 1rem;
+    border-color: #aac031;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .content .content-description button:hover {
+    border: 3px solid transparent;
+    color: white;
+    background-color: #aac031;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    margin: auto;
+    min-height: 250px;
+    width: 300px;
+}
+
+main .content-client {
+    margin-block: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+main .content-client h1 {
+    line-height: .2rem;
+}
+
+main .article {
+    background-color: #efffec;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* FIXME: */
+main .article .article-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+main .article .article-container .article-content {
+    flex-grow: 1;
+}
+
+main .article .article-container .article-content img {
+    min-width: 250px;
+    width: 300px;
+}
+
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #e39126;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+footer {
+    background-color: #aac031;
+    color: white;
+    text-align: center;
+}
