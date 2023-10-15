@@ -8,10 +8,15 @@ body {
     font-family: 'Ubuntu', 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0px;
+}
+
+header {
+    display: inline;
 }
 
 header.navbar-container {
+    position: sticky;
+    top: 0;
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -20,6 +25,8 @@ header.navbar-container {
     padding-block: 1rem;
     margin-inline: auto;
     z-index: 999;
+    background-color: white;
+    box-shadow: 0px 9px 26px -30px rgba(0,0,0,0.75);
 }
 
 header.navbar-container .logo img {
@@ -28,7 +35,7 @@ header.navbar-container .logo img {
 
 header.navbar-container .nav-list ul {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 2rem 1rem;
 }
 
@@ -52,7 +59,7 @@ header.navbar-container .nav-list li:hover a {
 }
 
 main {
-    width: 100%;
+    max-width: 1200px;
     font-family: 'Poppins', 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
@@ -62,11 +69,10 @@ main {
 
 main .content {
     flex: 1;
-    padding: 3rem 10rem;
+    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efffec;
 }
 
 main .content .content-description {
@@ -85,7 +91,6 @@ main .content .content-description p {
 }
 
 main .content .content-description button {
-    display: inline;
     padding: .8rem 2.5rem;
     margin-block-start: 1rem;
     text-transform: uppercase;
@@ -119,9 +124,13 @@ main .content .content-image img {
 
 main .content-client {
     margin-block: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
+    background-color: #efffec;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 main .content-client h1 {
@@ -129,23 +138,25 @@ main .content-client h1 {
 }
 
 main .article {
-    background-color: #efffec;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-/* FIXME: */
 main .article .article-container {
-    max-width: 1200px;
     display: flex;
     align-items: stretch;
     justify-content: space-around;
 }
 
 main .article .article-container .article-content {
-    flex-grow: 1;
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 3px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 15px -7px rgba(0,0,0,0.78);
 }
 
 main .article .article-container .article-content img {
@@ -153,6 +164,25 @@ main .article .article-container .article-content img {
     width: 300px;
 }
 
+main .article .article-container .article-content button {
+    padding: .5rem 1rem;
+    margin-block-start: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #aac031;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    border-color: #aac031;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .article .article-container .article-content button:hover {
+    border: 3px solid transparent;
+    color: white;
+    background-color: #aac031;
+}
 
 main aside {
     position: fixed;
