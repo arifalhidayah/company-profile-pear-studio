@@ -165,6 +165,11 @@ main .article .article-container .article-content img {
     width: 300px;
 }
 
+main .article .article-container .article-content img:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
 main .article .article-container .article-content button {
     padding: .5rem 1rem;
     margin-block-start: 1rem;
