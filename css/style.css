@@ -60,6 +60,7 @@ header.navbar-container .nav-list li:hover a {
 
 main {
     max-width: 1200px;
+    width: 100%;
     font-family: 'Poppins', 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
@@ -69,10 +70,10 @@ main {
 
 main .content {
     flex: 1;
-    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 main .content .content-description {
@@ -227,4 +228,58 @@ footer {
     background-color: #aac031;
     color: white;
     text-align: center;
+}
+
+/* End of Main Content */
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 1rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .title {
+        font-size: 2rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    .content-image img {
+        max-width: 200px;
+    }
+
+    main .content .content-client {
+        margin: 30rem 0;;
+    }
+
+    main .article .article-container {
+        flex-direction: column;
+    }
+
+    main .article .article-container .article-content {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
 }
