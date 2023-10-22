@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -27,7 +29,7 @@ header.navbar-container {
     margin-inline: auto;
     z-index: 999;
     background-color: white;
-    box-shadow: 0px 9px 26px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 26px -20px rgba(0, 0, 0, 0.75);
 }
 
 header.navbar-container .logo img {
@@ -79,10 +81,10 @@ main {
     padding: 2rem;
     border: 3px solid transparent;
     border-radius: 1rem;
-    box-shadow: 1px 3px 15px -7px rgba(0,0,0,0.78);
+    box-shadow: 1px 3px 15px -7px rgba(0, 0, 0, 0.78);
 }
 
-.content-description{
+.content-description {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -141,9 +143,10 @@ main {
 }
 
 .slider-wrapper {
+    display: flex;
     position: relative;
     width: 500px;
-  }
+}
 
 .slider-wrapper .image-list {
     padding: 1rem 3rem;
@@ -179,8 +182,8 @@ main {
 
 .slider-wrapper .slide-button#prev-slide {
     left: -80px;
-    display: none;  
-        /* display none is for hide the slide button if there is no image again */
+    display: none;
+    /* display none is for hide the slide button if there is no image again */
 }
 
 .slider-wrapper .slide-button#next-slide {
@@ -254,7 +257,7 @@ aside {
     flex: 1;
     border: 3px solid transparent;
     border-radius: 1rem;
-    box-shadow: 1px 3px 15px -7px rgba(0,0,0,0.78);
+    box-shadow: 1px 3px 15px -7px rgba(0, 0, 0, 0.78);
 }
 
 aside .profile-image {
@@ -304,6 +307,7 @@ footer {
     header.navbar-container {
         flex-direction: column;
         align-items: center;
+        margin: 1rem;
     }
 
     header.navbar-container .nav-list ul {
@@ -312,41 +316,51 @@ footer {
     }
 
     main {
-        padding: 1rem 1rem;
+        flex-flow: column wrap;
+        margin: 1rem;
     }
 
-    main .content {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    main .content .content-description .title {
+    .content-description .title {
+        flex-wrap: wrap;
         font-size: 2rem;
     }
 
-    main .content .content-description p {
+    .content-description p {
         font-size: 1rem;
     }
 
-    main .content .content-image {
-        order: -1;
+    .slider-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 300px;
     }
 
-    .content-image img {
-        max-width: 200px;
+    .slider-wrapper .image-list {
+        justify-content: center;
+        width: 200px;
     }
 
-    main .content .content-client {
-        margin: 30rem 0;;
+    .slider-wrapper .slide-button#prev-slide {
+        left: -10px;
+        display: none;
+        /* display none is for hide the slide button if there is no image again */
     }
 
-    main .article .article-container {
+    .slider-wrapper .slide-button#next-slide {
+        right: -10px;
+    }
+
+    .article-container {
         flex-direction: column;
     }
 
-    main .article .article-container .article-content {
+    .article-container .article-content {
         width: 100%;
         margin: 1rem 0;
         padding: 1rem;
+    }
+
+    aside {
+        align-self: stretch;
     }
 }
