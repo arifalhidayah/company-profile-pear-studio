@@ -22,6 +22,4 @@ const initSlider = () => {
         handleSlideButtons();
     });
 }
-
-
 window.addEventListener("load", initSlider);
